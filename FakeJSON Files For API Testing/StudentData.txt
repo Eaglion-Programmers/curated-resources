@@ -1,0 +1,39 @@
+[
+  
+    {
+    "name":"Aneesh",
+    "post":"Electrical Engineering",
+    "college":"Harvard University"
+    },
+ 
+    {
+   "name":"Anmol",
+    "post":"Doctor",
+    "college":"Nepal Institute of Biology"
+    },
+
+    {
+   "name":"Vishal",
+   "post":"Computer Operator",
+    "college":"Abc College"
+    },
+
+    {
+   "name":"Vasudev",
+   "post":"Software Engineer",
+    "college":"Indian Institute of Technology , Kharagpur"
+    },
+
+    {
+   "name":"Raju",
+    "post":"Mechanical Engineer",
+    "college":"Spanish Institute of Technology"
+    },
+
+    {
+   "name":"Amit",
+    "post":"ML Expert",
+    "college":"No College"
+    }
+
+]
