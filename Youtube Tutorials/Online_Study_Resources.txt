@@ -1,0 +1,83 @@
+Some important youtube channels-
+
+Computer Science:
+
+1. Database Management Systems (DBMS)
+
+	Gate Smashers
+	https://www.youtube.com/playlist?list=PLxCzCOWd7aiFAN6I8CuViBuCdJgiOkT2Y 
+
+	5 Minutes Engineering
+	https://www.youtube.com/playlist?list=PLYwpaL_SFmcBU4HS74xGTK1cAFbY0rdVY
+
+	Jenny's lectures
+	https://www.youtube.com/playlist?list=PLdo5W4Nhv31b33kF46f9aFjoJPOkdlsRc
+
+2. Data Structures and Algorithms (DSA)
+	
+	Abdul Bari
+	https://www.youtube.com/channel/UCZCFT11CWBi3MHNlGf019nw
+
+	mycodeschool
+	https://www.youtube.com/user/mycodeschool
+
+	Jenny's Lectures
+	https://www.youtube.com/playlist?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU
+	https://www.youtube.com/playlist?list=PLdo5W4Nhv31aBrJE1WS4MR9LRfbmZrAQu (Dynamic Programming)
+	
+	Aditya Verma
+	https://www.youtube.com/c/AdityaVermaTheProgrammingLord
+
+	Apna College
+	https://www.youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ
+
+
+3. Networking
+
+	Gate Smashers
+	https://www.youtube.com/playlist?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_
+	
+	
+	5 Minutes Engineering
+	https://www.youtube.com/playlist?list=PLYwpaL_SFmcAXkWn2IR-l_WXOrr0n851a
+
+
+4. Operating Systems
+	
+	Gate Smashers
+	https://www.youtube.com/playlist?list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p
+
+	
+	5 Minutes Engineering
+	https://www.youtube.com/watch?v=y5WdaJrGh5U
+
+5. Theory of Computation (TOC)
+	
+	Gate Smashers
+	https://www.youtube.com/playlist?list=PLxCzCOWd7aiFM9Lj5G9G_76adtyb4ef7i
+
+	Uncode GATE
+	https://www.youtube.com/playlist?app=desktop&list=PLEbnTDJUr_IdM___FmDFBJBz0zCsOFxfK
+
+
+
+
+Web Development:
+	
+	The Net Ninja
+	https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg
+
+	Web Dev Simplified 
+	https://www.youtube.com/c/WebDevSimplified
+
+	PedroTech
+	https://www.youtube.com/c/PedroTechnologies
+
+	CodeWithHarry 
+	https://www.youtube.com/c/CodeWithHarry/playlists
+
+
+	Traversy Media 
+	https://www.youtube.com/c/TraversyMedia
+
+
