@@ -1,0 +1,56 @@
+Hello geeks!!
+New syllabus of SPPU has a subject ML in its 5th Semester
+herewithin I have mentioned some of the good YouTube resources for ML Concepts:
+
+Unit I INTRODUCTION TO MACHINE LEARNING:
+https://youtu.be/ukzFI9rgwfU (Simplilearn)
+https://youtu.be/HKcO3-6TYr0
+https://youtu.be/1FZ0A1QCMWc
+https://youtu.be/olFxW7kdtP8
+https://youtu.be/pr5LXi4U10c
+https://youtu.be/FgakZw6K1QQ
+https://youtu.be/azXCzI57Yfc
+
+Unit II REGRESSION 
+https://youtu.be/uQ6S68Hke-U
+https://youtu.be/K490SP-_H0U
+https://youtu.be/sDv4f4s2SB8
+https://youtu.be/nk2CQITm_eo
+https://youtu.be/zITIFTsivN8
+https://youtu.be/Y90NTNG_yJg
+https://youtu.be/W-0-u6XVbE4
+https://youtu.be/EuBBz3bI-aA
+
+Unit III CLASSIFICATION 
+Linear Classification model https://youtu.be/GnDaW8tQu7U
+Confusion Matrix, Accuracy and ROC curves. https://youtu.be/Joh3LOaG8Q0
+Logistic Regression https://youtu.be/yIYKR4sgzI8 
+Support Vector Machines (SVM)  https://youtu.be/efR1C6CvhmE (3 parts
+Introduction to various SVM Kernel to handle non-linear data https://youtu.be/0mNG49K5Av8  
+Multiclass Classification techniques - https://youtu.be/6kzvrq-MIO0 
+Cross-Validation https://youtu.be/7062skdX05Y 
+Sub-Sampling, HyperParameter Tuning Techniques. https://youtu.be/355u2bDqB7c 
+
+Unit IV TREE BASED AND PROBABILISTIC MODELS 
+Decision Tree – https://youtu.be/7VeUPuFGJHk , 
+Impurity Measures https://youtu.be/Xfgq8zh8sDQ 
+Random Forest https://youtu.be/J4Wdy0Wc_xQ 
+Conditional Probability https://youtu.be/_IgyaD7vOOA 
+Bayes Theorem https://youtu.be/MxOny_1y2Q4 
+ MLE and MAP estimations https://youtu.be/c3uFs4uZ0xI 
+ Naïve Bayes Classifier https://youtu.be/O2L2Uv9pdDA  	 	
+Solved Example : https://youtu.be/XzSlEA4ck2I 
+ 
+Unit V DISTANCE AND RULE BASED MODELS 
+Distance Metrics https://www.analyticsvidhya.com/blog/2020/02/4-types-of-distance-metrics-in-machine-learning/ .	  
+K-Nearest Neighbour https://youtu.be/HVXime0nQeI 
+K-means clustering Algorithm with example https://www.youtube.com/watch?v=4b5d3muPQmA,
+https://www.youtube.com/watch?v=RdT7bhm1M3E (Solved Numerical)
+Hierarchical Clustering https://www.youtube.com/watch?v=7xHsRkOdVwo
+https://www.youtube.com/watch?v=RdT7bhm1M3E (Numerical)
+Association Rule Mining https://youtu.be/43CMKRHdH30 
+
+
+
+
+
