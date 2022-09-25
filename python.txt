@@ -1,0 +1,2 @@
+Python is a interpreted programming language
+it was invented by James Ghostling
