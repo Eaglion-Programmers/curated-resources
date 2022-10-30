@@ -1,0 +1,81 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include <limits.h>
+
+struct Queue{
+    int front,rear,size;
+    unsigned capacity;
+    int *arr;
+};
+
+
+struct Queue *createQueue(unsigned capacity)
+{
+    struct Queue *q = (struct Queue *)malloc(sizeof(capacity));
+    q->front = q->size = 0;
+    q->capacity = capacity;
+    q->rear = q->capacity-1;
+    q->arr = (int*)malloc(q->capacity*sizeof(int));
+    return q;
+
+}
+
+int isFull(struct Queue *q)
+{
+    return(q->size == q->capacity);
+}
+
+int isEmpty(struct Queue *q)
+{
+    return(q->size == 0);
+}
+
+
+
+
+void enqueu(struct Queue *q,int val)
+{
+    if(isFull(q))
+     return  ;
+    
+    q->rear = (q->rear+1) % q->capacity;
+    q->arr[q->rear] = val;
+    q->size++;
+     printf("%d enqueued to queue\n", val);
+
+}
+
+int dequeu(struct Queue *q)
+{
+    if(isEmpty(q))
+    {
+    printf("queisempty");
+    
+    }
+
+    else{
+    int d = q->arr[q->front];
+    q->front= (q->front+1)%q->capacity;
+    q->size--;
+    return d;
+    }
+
+}
+
+
+
+void main ()
+{
+    struct Queue *q = createQueue(10);
+    enqueu(q,10);
+        enqueu(q,20);
+            enqueu(q,30);
+                enqueu(q,40);
+
+                printf("%dis dequed\n ",dequeu(q));
+                 printf("%dis dequed \n",dequeu(q));
+                  printf("%dis dequed \n",dequeu(q));
+                   printf("%dis dequed \n",dequeu(q));
+                      printf("%dis dequed \n",dequeu(q));
+                  
+}
