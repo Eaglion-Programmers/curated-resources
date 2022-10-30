@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct node {
+    int data;
+    struct node *next;
+};
+
+struct node *f = NULL;
+ struct node *r = NULL;
+
+
+void enque(int val)
+{
+    struct node *n = (struct node*)malloc(sizeof (struct node));
+    n->data= val;
+    n->next = NULL;
+
+    if (f == NULL)
+    {
+        f = r = n;
+    }
+    else {
+        r->next = n;
+        r = n;
+
+    }
+
+}
+
+
+int deque()
+{
+    int val;
+    struct node *a = f;
+    val =f->data ;
+    f = f->next;
+    free(a);
+    return val; 
+}
+
+void main() 
+{
+    enque(64);
+    printf("dequed elements are %d ",deque());
+}
