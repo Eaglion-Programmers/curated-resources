@@ -1,31 +1,21 @@
 #include<iostream>
 using namespace std;
-bool bitSet(int n,int k){
-   if(n&(1<<(k-1))!=0){
-    return true;
-   }
-   else return false;
-}
 
-bool bitSet1(int n,int k){
-   if(((n>>(k-1))&1)==1){
-    return true;
-   }
-   else return false;
+int findodd(int arr[],int n){
+int res=0;
+for(int i=0;i<n;i++){
+    res=res^arr[i];
 }
+return res;
 
+}
 int main(){
-int n,k;
-cout<<"Enter the number ";
-cin>>n;
-
-cout<<"enter the bit position";
-cin>>k;
-
-bool res=bitSet1(n,k);
-if(res){
-    cout<<"bit is set";}
-else{
-    cout<<"bit not set";
+int n=5,arr[5];
+cout<<"enter the 5 elements ";
+for(int i=0;i<n;i++){
+    cin>>arr[i];
 }
+int res=findodd(arr,n);
+cout<<res;
+
 }
