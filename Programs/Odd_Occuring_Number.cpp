@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 int findodd(int arr[],int n){
 int res=0;
 for(int i=0;i<n;i++){
@@ -16,4 +17,5 @@ for(int i=0;i<n;i++){
 }
 int res=findodd(arr,n);
 cout<<res;
+
 }
