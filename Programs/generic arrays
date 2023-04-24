@@ -1,0 +1,23 @@
+public class GenericArray<T> {
+
+    void generic(T t[])
+    {
+        for(T x : t)
+        {
+            System.out.println(x + "   ");
+        }
+    }
+    
+    public static void main(String[] args)
+    {
+        GenericArray ga = new GenericArray();
+        int arr[] = {10, 30, 50, 60, 20, 80};
+        double arr2[] = {11.2, 10.2, 16.2, 88.88};
+        String arr3[] = {"Ajinkya", "XYZ", "ABC", "PQRS"};
+
+        ga.generic(arr);
+        ga.generic(arr2);
+        ga.generic(arr3);
+    }
+}
+  
