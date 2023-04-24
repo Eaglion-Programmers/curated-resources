@@ -1,0 +1,293 @@
+import java.time.temporal.IsoFields;
+import java.util.ArrayDeque;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class BST {
+    static class Node {
+
+        int data;
+        Node left;
+        Node right;
+
+        Node(int data) {
+            this.data = data;
+            left = null;
+            right = null;
+        }
+    }
+
+    static class TreeInfo {
+        int height;
+        int diameter;
+
+        TreeInfo(int height, int diameter) {
+            this.height = height;
+            this.diameter = diameter;
+        }
+    }
+
+    public static TreeInfo diameterFinder(Node root) {
+
+        if(root == null) {
+            return new TreeInfo(0, 0);
+        }
+
+        TreeInfo left = diameterFinder(root.left);
+        TreeInfo right = diameterFinder(root.right);
+
+        int myHeight = (Math.max(left.height, right.height)+1);
+        
+        int leftdiam = left.diameter;
+        int rightdiam = right.diameter;
+        int rootdiam = left.height + right.height + 1;
+
+        int myDiam =  (Math.max(Math.max(leftdiam, rightdiam), rootdiam));
+
+        return new TreeInfo(myHeight, myDiam);
+
+    }
+
+    static class BST_Editor {
+        static Node root;
+        static int idx = -1;
+
+        public static Node BuildTree(int[] nodes) {
+            idx++;
+
+            if(nodes[idx] == -1) {
+                return null;
+            }
+            
+            Node newNode = new Node(nodes[idx]);
+            newNode.left = BuildTree(nodes);
+            newNode.right = BuildTree(nodes);
+
+            return newNode;
+        }
+
+        public static void preorder(Node root) {
+
+            if(root == null){
+                System.out.print(" -1 ");
+                return;
+            }
+
+            System.out.print(" " +root.data + " ");
+            preorder(root.left);
+            preorder(root.right);
+        }
+
+        public static void inorder(Node root) {
+            
+            if(root == null) {
+                System.out.print(" -1 ");
+                return;
+            }
+
+            inorder(root.left);
+            System.out.print(" " +root.data+ " ");
+            inorder(root.right);
+        }
+
+        public static void postorder(Node root) {
+
+            if(root == null) {
+                System.out.print(" -1 ");
+                return;
+            }
+
+            postorder(root.left);
+            postorder(root.right);
+            System.out.print(" "+root.data+ " ");
+        }
+
+        public static int countnodes(Node root) {
+
+            if(root == null) {
+                return 0;
+            }
+
+            int leftnodes = countnodes(root.left);
+            int rightnodes = countnodes(root.right);
+
+            return leftnodes+rightnodes+1;
+
+        }
+
+        public static int sumofnodes(Node root) {
+            if(root == null) {
+                return 0;
+            }
+
+            int leftsum = sumofnodes(root.left);
+            int rightsum = sumofnodes(root.right);
+            
+            return leftsum + rightsum + root.data;
+        }
+
+        public static int height(Node root) {
+            if(root == null) {
+                return 0;
+            }
+
+            int leftheight = height(root.left);
+            int rightheight = height(root.right);
+
+            return Math.max(leftheight, rightheight)+1;
+        }
+
+        public static int diameter(Node root) {
+
+            if(root == null) {
+                return 0;
+            }
+
+            int leftdia = diameter(root.left);
+            int rightdia = diameter(root.right);
+            int leftheight = height(root.left);
+            int rightheight = height(root.right);
+
+            return(Math.max(Math.max(leftdia, rightdia), (leftheight+rightheight+1)));
+
+        }
+
+        public static boolean isIdenfical(Node root, Node subroot) {
+            if(root == null && subroot == null) {
+                return true;
+            }
+
+            if(root == null || subroot == null) {
+                return false;
+            }
+
+            if(root.data == subroot.data) {
+                return isIdenfical(root.left, subroot.left) && isIdenfical(root.right, subroot.right);
+            }
+            
+            return false;
+        }
+
+        public static boolean isSubTree(Node root, Node subroot) {
+
+            if(subroot == null) {
+                return true;
+            }
+
+            if(root == null) {
+                return false;
+            }
+
+            if(root.data == subroot.data) {
+                if(isIdenfical(root, subroot)) {
+                    return true;
+                }
+                return false;
+            }
+
+            return isSubTree(root.left, subroot) || isSubTree(root.right, subroot);
+            
+        }
+
+        public static void levelorder(Node root) {
+
+            if(root == null) {
+                System.out.println("Tree Empty...");
+                return;
+            }
+
+            Queue<Node> q = new LinkedList();
+
+            q.add(root);
+            q.add(null);
+
+            while(!q.isEmpty()) {
+                
+                Node currNode = q.remove();
+
+                if(currNode == null) {
+                    System.out.println();
+
+                    if(q.isEmpty()) {
+                        break;
+                    } else {
+                        q.add(null);
+                    }
+                } else {
+                    System.out.print(currNode.data + " ");
+                    if(currNode.left != null) {
+                        q.add(currNode.left);
+                    }
+                    if(currNode.right != null) {
+                        q.add(currNode.right);
+                    }
+                }
+            }
+        }
+
+        public static int sumofnodesatK(Node root, int k) {
+
+            int sum = 0;
+            if(root == null) {
+                return 0;
+            }
+
+            Queue<Node> q = new LinkedList<>();
+            q.add(root);
+            q.add(null);
+            
+            while(!q.isEmpty() && k>0) {
+
+                Node currNode = q.remove();
+
+                if(currNode == null) {
+                    k--;
+                    if(q.isEmpty()) {
+                        break;
+                    } else {
+                        q.add(null);
+                    }
+                } else {
+                    if(currNode.left != null)
+                        q.add(currNode.left);
+                    if(currNode.right != null) 
+                        q.add(currNode.right);
+                }
+            }
+            
+            while(!q.isEmpty()) {
+                Node temp = q.remove();
+                if(temp != null) {sum += temp.data;}
+            }
+
+            return sum;
+
+       }
+    }
+
+    public static void main(String[] args) {
+
+        int nodes[] = {1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
+
+        BST_Editor tree = new BST_Editor();
+        Node root = tree.BuildTree(nodes);
+
+        // tree.preorder(root);
+        // System.out.println();
+        // tree.inorder(root);
+        // System.out.println();
+        // tree.postorder(root);
+
+        // System.out.println("\n\nLevel:  ");
+        // tree.levelorder(root);
+        // System.out.println();
+
+        // System.out.println(tree.countnodes(root));
+        // System.out.println(tree.sumofnodes(root));
+        // System.out.println(tree.height(root));
+
+        // System.out.println(diameterFinder(root).diameter);
+
+        System.out.println(tree.sumofnodesatK(root, 2));
+    }
+}
